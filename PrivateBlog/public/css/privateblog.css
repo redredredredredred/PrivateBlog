@@ -1,0 +1,651 @@
+/*Ã¥Â­â€”Ã¤Â½â€œÃ¦â€“â€¡Ã¤Â»Â¶Ã¥Â¯Â¼Ã¥â€¦Â¥*/
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url(../font/Lato-Bold.ttf);
+    /*font-weight: bold;*/
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url(../font/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url(../font/Lato-Light.ttf);
+    /*font-weight: lighter;*/
+}
+
+
+/*Ã¥â€¦Â¨Ã¥Â±â‚¬Ã¥Å¸ÂºÃ¥â€¡â€ Ã¦Â Â·Ã¥Â¼Â*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato Regular';
+}
+
+html,
+body {
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    min-width: 1240px;
+}
+
+body {
+    min-height: 916px;
+    height: auto;
+    background: url(../images/b1.png) no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    /* padding: 52px 100px 44px; */
+    margin: 52px 100px 44px;
+    overflow: auto;
+    position: relative;
+    z-index: -23;
+}
+
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+
+header {
+    height: 60px;
+    background-color: #3d3f40;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+header .logo {
+    min-width: 106px;
+    width: auto;
+    float: left;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    line-height: 56px;
+}
+
+header .logo>img {
+    width: 22px;
+    vertical-align: middle;
+    line-height: 60px;
+    padding-left: 20px;
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+header .logo .menulist {
+    min-width: 66px;
+    width: auto;
+    float: right;
+    height: 60px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: -30px; */
+}
+
+header .logo .menulist>ul {
+    min-width: 56px;
+    width: auto;
+    float: left;
+    height: 52px;
+    /* padding-top: 18px; */
+}
+
+header .logo .menulist>ul li {
+    display: none;
+    list-style: none;
+    color: #8e8f90;
+    height: 25px;
+}
+
+header .logo .menulist>ul li.active {
+    display: block;
+}
+
+header .logo .menulist>i.arrow {
+    float: right;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+header .user {
+    width: 205px;
+    float: right;
+    height: 60px;
+    line-height: 60px;
+}
+
+header .user button {
+    width: 88px;
+    height: 28px;
+    background-color: #ed7b68;
+    border: 0;
+    border-radius: 3px;
+    margin: auto 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header .user .microphone {
+    display: inline-block;
+    height: 30px;
+    width: 10px;
+}
+
+header .user button {}
+
+header .user .avatar {
+    height: 60px;
+    width: 68px;
+    background-color: #494b4d;
+    float: right;
+    position: relative;
+}
+
+header .user .avatar>img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+header .nav {
+    width: 450px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+header .nav>ul.nav-content {
+    height: 60px;
+    width: 400px;
+    /* line-height: 60px; */
+}
+
+header .nav>ul.nav-content li {
+    list-style: none;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+header .nav>ul.nav-content li span {
+    line-height: 60px;
+    font-family: 'Lato Bold';
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8e8f90;
+}
+
+header .nav>ul.nav-content li.active span {
+    font-size: 13px;
+    color: #ffffff;
+    border-bottom: 2px solid #ea7a67;
+    /* text-decoration: underline; */
+}
+
+
+/**/
+
+section.message {
+    width: 272px;
+    height: 760px;
+    float: left;
+    background-color: #f5f5f5;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section.message .query {
+    height: 60px;
+    position: relative;
+    /* font-size: 0; */
+}
+
+section.message .query input[type=text] {
+    height: 60px;
+    width: 216px;
+    box-sizing: border-box;
+    border: 0px;
+    float: left;
+    padding: 20px 20px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #48494a;
+    font-size: 20px;
+}
+
+section.message .query input[type=text]::-webkit-input-placeholder {
+    color: #d5d5d8;
+    font-size: 20px;
+}
+
+section.message .query button {
+    height: 60px;
+    width: 56px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+section.message .query button i {}
+
+section.message .messagelist {
+    height: 700px;
+    overflow: auto;
+}
+
+section.message .messagelist::-webkit-scrollbar {
+    width: 0;
+}
+
+section.message .messagelist ul {
+    height: auto;
+}
+
+section.message .messagelist ul li {
+    list-style: none;
+    display: block;
+    height: 90px;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+section.message .messagelist ul li.active>span.hint,
+section.message .messagelist ul li.unread>span.hint {
+    background-color: #ff7159;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+section.message .messagelist ul li.active {
+    background: #ffffff;
+}
+
+section.message .messagelist ul li.unread {}
+
+section.message .messagelist ul li.read {
+    opacity: 0.5;
+}
+
+section.message .messagelist ul li .avatar {
+    width: 85px;
+    height: 90px;
+    float: left;
+    position: relative;
+}
+
+section.message .messagelist ul li .avatar i {
+    height: 52px;
+    width: 52px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section.message .messagelist ul li .avatar i span {}
+
+section.message .messagelist ul li .one i span {
+    height: 52px;
+    width: 52px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+section.message .messagelist ul li .two i span {}
+
+section.message .messagelist ul li .three i span {}
+
+section.message .messagelist ul li .four i span {}
+
+section.message .messagelist ul li .five i span {}
+
+section.message .messagelist ul li .messagecontent {
+    width: 185px;
+    float: right;
+    height: 90px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+section.message .messagelist ul li .messagecontent>p {
+    font-size: 14px;
+}
+
+section.message .messagelist ul li .messagecontent>p:first-child {
+    font-family: 'Lato Bold';
+    width: 93%;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 25px;
+    color: #353738;
+}
+
+section.message .messagelist ul li .messagecontent>p:last-child {
+    width: 100%;
+    -o-text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 14px;
+    color: rgba(53, 55, 56, 0.5);
+}
+
+section.content {
+    position: absolute;
+    width: 100%;
+    min-width: 627px;
+    box-sizing: border-box;
+    height: 760px;
+    margin: 60px auto;
+    padding: 0 272px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+section.content>p.title {
+    font-size: 28px;
+    color: #616466;
+    margin: 26px 32px 0 32px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+section.content .main-content {
+    padding: 0 32px;
+}
+
+section.content .main-content::-webkit-scrollbar {
+    border: 0;
+}
+
+section.content .main-content .content-item {
+    height: auto;
+    margin-top: 32px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+}
+
+section.content .main-content .content-item .avatar {
+    width: 34px;
+    height: 50px;
+    position: absolute;
+}
+
+section.content .main-content .content-item .avatar>img {
+    height: 34px;
+    width: 34px;
+}
+
+section.content .main-content .content-item .avatar>p {
+    font-size: 12px;
+    color: #b3b4b5;
+    text-align: center;
+}
+
+section.content .main-content .content-item .content {
+    /* position: absolute; */
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding-left: 54px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+section.content .main-content .content-item .content>p.title {
+    padding-bottom: 25px;
+    font-size: 16px;
+    color: #555858;
+}
+
+section.content .main-content .content-item .content .paragraph {
+    color: #555858;
+}
+
+section.content .main-content .content-item .content .paragraph>p {
+    font-size: 16px;
+    padding-bottom: 25px;
+    font-family: 'Lato Regular';
+}
+
+section.content .main-content .content-item .content>p.plus {
+    color: #555858;
+}
+
+section.content .main-content .content-item .content>div.plus {
+    position: relative;
+}
+section.content .main-content .content-item .content>div.plus>p{
+ font-size: 0;
+ margin: 10px 0;
+}
+section.content .main-content .content-item .content>div.plus>p a{
+ font-size: 14px;
+ margin: 10px 0;
+}
+section.content .main-content .content-item .content>div.plus>p img{
+    width: 33%;
+    margin: 0 1px 0 0;
+    height: 96px;
+    /* float: left; */
+}
+section.content .main-content .content-item .content>div.plus>i{
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    top: 39px;
+    right: 53px;
+}
+
+section.content .main-content .content-item span.datetext {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    color: #b3b4b5;
+}
+
+section.content .new-message {
+    margin: 34px 32px 0 32px;
+    position: relative;
+}
+
+section.content .new-message img {
+    height: 34px;
+    width: 34px;
+    position: absolute;
+}
+section.content .new-message input {
+height: 43px;width: 91%;margin-left: 50px;border: 1px solid #ededed;box-sizing: border-box;padding: 10px;color: #555858;font-size: 12px;}
+
+
+/**/
+
+section.userinfo {
+    width: 272px;
+    height: 760px;
+    float: right;
+    background-color: #f5f5f5;
+}
+
+section.userinfo .avatar {
+    height: 138px;
+    background: url(../images/b2.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-left: 1px solid #f5f5f5;
+}
+
+section.userinfo>p {
+    font-size: 12px;
+    padding-left: 30px;
+    height: 50px;
+    line-height: 50px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+section.userinfo .avatar p {
+    color: #ffffff;
+}
+
+section.userinfo .avatar p:first-child {}
+
+section.userinfo .avatar p:nth-child(1) {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+section.userinfo .avatar p:nth-child(2) {
+    font-size: 14px;
+}
+
+section.userinfo .avatar p:nth-child(3) {
+    text-align: center;
+}
+
+section.userinfo .avatar p:nth-child(3) img {
+    width: 15px;
+    height: 15px;
+    margin: 13px 5px;
+}
+
+section.userinfo .messagelist {
+    height: 262px;
+    padding: 0 0px 0 15px;
+    overflow: scroll;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+section.userinfo .messagelist::-webkit-scrollbar {
+    background-color: #f5f5f5;
+    width: 5px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+section.userinfo .messagelist::-webkit-scrollbar-button {
+    display: none;
+}
+
+section.userinfo .messagelist::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    width: 5px;
+}
+
+section.userinfo .messagelist::-webkit-scrollbar-thumb {
+    color: #dcdcdc;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    width: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+section.userinfo .messagelist::-webkit-scrollbar-corner {
+    background-color: #f5f5f5;
+}
+
+section.userinfo .messagelist .messageitem {
+    height: 50px;
+    position: relative;
+    font-size: 14px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+section.userinfo .messagelist .active {
+    color: #545657;
+    background: #ffffff;
+}
+
+section.userinfo .messagelist .active>p {
+    color: #545657;
+    background: #ffffff;
+}
+
+section.userinfo .messagelist .unread {
+    font-family: 'Lato Bold';
+    color: #3f4142;
+}
+
+section.userinfo .messagelist .unread>p {
+    font-family: 'Lato Bold';
+    color: #3f4142;
+}
+
+section.userinfo .messagelist .read {
+    color: #545657;
+    opacity: 0.5;
+}
+
+section.userinfo .messagelist .read>p {
+    color: #545657;
+    opacity: 0.5;
+}
+
+section.userinfo .messagelist .messageitem p {
+    line-height: 50px;
+    font-size: 14px;
+}
+
+section.userinfo .messagelist .messageitem i {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    border-radius: 8px;
+    background-color: #ed7b68;
+    color: #ffffff;
+    padding: 0px 5px;
+    font-size: 12px;
+}
+
+section.userinfo .datepicker {
+    height: 300px;
+    background: url(../images/ca1.png) no-repeat;
+    background-size: cover;
+}
