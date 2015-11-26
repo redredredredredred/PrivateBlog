@@ -1,9 +1,7 @@
-/*Ã¥Â­â€”Ã¤Â½â€œÃ¦â€“â€¡Ã¤Â»Â¶Ã¥Â¯Â¼Ã¥â€¦Â¥*/
-
+/*字体文件*/
 @font-face {
     font-family: 'Lato Bold';
     src: url(../font/Lato-Bold.ttf);
-    /*font-weight: bold;*/
 }
 
 @font-face {
@@ -14,11 +12,7 @@
 @font-face {
     font-family: 'Lato Light';
     src: url(../font/Lato-Light.ttf);
-    /*font-weight: lighter;*/
 }
-
-
-/*Ã¥â€¦Â¨Ã¥Â±â‚¬Ã¥Å¸ÂºÃ¥â€¡â€ Ã¦Â Â·Ã¥Â¼Â*/
 
 * {
     padding: 0;
@@ -45,7 +39,6 @@ body {
     background: url(../images/b1.png) no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    /* padding: 52px 100px 44px; */
     margin: 52px 100px 44px;
     overflow: auto;
     position: relative;
@@ -57,12 +50,11 @@ body {
     content: "";
     display: table;
 }
-
+/*头部 */
 header {
     height: 60px;
     background-color: #3d3f40;
     position: relative;
-    /* overflow: hidden; */
 }
 
 header .logo {
@@ -80,7 +72,6 @@ header .logo>img {
     vertical-align: middle;
     line-height: 60px;
     padding-left: 20px;
-    /* float: left; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -93,9 +84,6 @@ header .logo .menulist {
     width: auto;
     float: right;
     height: 60px;
-    /* position: absolute; */
-    /* top: 0; */
-    /* right: -30px; */
 }
 
 header .logo .menulist>ul {
@@ -103,7 +91,6 @@ header .logo .menulist>ul {
     width: auto;
     float: left;
     height: 52px;
-    /* padding-top: 18px; */
 }
 
 header .logo .menulist>ul li {
@@ -183,7 +170,6 @@ header .nav {
 header .nav>ul.nav-content {
     height: 60px;
     width: 400px;
-    /* line-height: 60px; */
 }
 
 header .nav>ul.nav-content li {
@@ -205,11 +191,10 @@ header .nav>ul.nav-content li.active span {
     font-size: 13px;
     color: #ffffff;
     border-bottom: 2px solid #ea7a67;
-    /* text-decoration: underline; */
 }
 
 
-/**/
+/*信息列表*/
 
 section.message {
     width: 272px;
@@ -223,7 +208,6 @@ section.message {
 section.message .query {
     height: 60px;
     position: relative;
-    /* font-size: 0; */
 }
 
 section.message .query input[type=text] {
@@ -364,7 +348,7 @@ section.message .messagelist ul li .messagecontent>p:last-child {
     line-height: 14px;
     color: rgba(53, 55, 56, 0.5);
 }
-
+/* 信息内容*/
 section.content {
     position: absolute;
     width: 100%;
@@ -457,26 +441,32 @@ section.content .main-content .content-item .content>p.plus {
 section.content .main-content .content-item .content>div.plus {
     position: relative;
 }
-section.content .main-content .content-item .content>div.plus>p{
- font-size: 0;
- margin: 10px 0;
+
+section.content .main-content .content-item .content>div.plus>p {
+    font-size: 0;
+    margin: 10px 0;
 }
-section.content .main-content .content-item .content>div.plus>p a{
- font-size: 14px;
- margin: 10px 0;
+
+section.content .main-content .content-item .content>div.plus>p a {
+    font-size: 14px;
+    margin: 10px 0;
 }
-section.content .main-content .content-item .content>div.plus>p img{
+
+section.content .main-content .content-item .content>div.plus>p img {
     width: 33%;
     margin: 0 1px 0 0;
-    height: 96px;
-    /* float: left; */
+    min-height: 96px;
 }
-section.content .main-content .content-item .content>div.plus>i{
+
+section.content .main-content .content-item .content div.plus p>i {
     font-size: 14px;
+    height: 76%;
     color: #ffffff;
     position: absolute;
-    top: 39px;
-    right: 53px;
+    top: 0;
+    right: 17%;
+    margin-right: -30px;
+    transform: translatey(50%);
 }
 
 section.content .main-content .content-item span.datetext {
@@ -490,6 +480,8 @@ section.content .main-content .content-item span.datetext {
 section.content .new-message {
     margin: 34px 32px 0 32px;
     position: relative;
+    overflow: hidden;
+    height: 90px;
 }
 
 section.content .new-message img {
@@ -497,11 +489,20 @@ section.content .new-message img {
     width: 34px;
     position: absolute;
 }
+
 section.content .new-message input {
-height: 43px;width: 91%;margin-left: 50px;border: 1px solid #ededed;box-sizing: border-box;padding: 10px;color: #555858;font-size: 12px;}
+    height: 43px;
+    width: 91%;
+    margin-left: 50px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #555858;
+    font-size: 12px;
+}
 
 
-/**/
+/*用户信息*/
 
 section.userinfo {
     width: 272px;
